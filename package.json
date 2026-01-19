@@ -1,0 +1,33 @@
+{
+    "name": "backend-hono-prisma",
+    "version": "1.0.0",
+    "description": "Hono + TypeScript + Prisma template",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "db:generate": "prisma generate",
+        "db:push": "prisma db push",
+        "db:migrate": "prisma migrate dev",
+        "db:studio": "prisma studio"
+    },
+    "keywords": [
+        "hono",
+        "typescript",
+        "prisma",
+        "api"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@hono/node-server": "^1.13.0",
+        "@prisma/client": "^6.7.0",
+        "hono": "^4.6.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "prisma": "^6.7.0",
+        "tsx": "^4.19.0",
+        "typescript": "^5.7.0"
+    }
+}
